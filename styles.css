@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My learnings in Algebra</title>
+    <style>
+        /* style.css */
+
+        /* Global Styles */
+        * {
+          margin: 0;
+          padding: 20;
+          box-sizing: border-box;
+        }
+
+        body {
+       
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(135deg, #d6d4f8 0%, #aea9e1 50%, #7f79c1 100%);
+          background-size: 400% 400%;
+          animation: gradientShift 15s ease infinite;
+          color: #031716;
+          line-height: 1.6;
+          min-height: 100vh;
+          position: relative;
+        }
+
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        /* 3D and Modern Effects */
+        section {
+          padding: 30px;
+          text-align: center;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        img {
+          max-width: 50%;
+          height: auto;
+          border-radius: 12px;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+          transform: translateY(-5px) scale(1.02);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Headers with Transitions */
+        h1, h2, h3 {
+          color: #5853a3;
+          margin-bottom: 20px;
+          transition: all 0.3s ease;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          position: relative;
+        }
+
+        h1:hover, h2:hover, h3:hover {
+          color: #201b69;
+          transform: scale(1.05);
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation - Fixed at Bottom for Modern Mobile-Like Feel */
+        nav {
+          position: fixed;
+          bottom: 10;
+          left: 10;
+          right: 10;
+          background: #3a348a;
+          padding: 15px 15;
+          text-align: center;
+          box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
+        }
+
+        nav a {
+          color: #eaf1d4;
+          text-decoration: none;
+          font-weight: bold;
+          margin: 0 15px;
+          padding: 10px 20px;
+          border-radius: 25px;
+          background: #7f79c1;
+          transition: all 0.3s ease;
+          display: inline-block;
+        }
+
+        nav a:hover {
+          background:  #3a348a;
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+        }
+
+        /* Header Section */
+        header {
+          background: rgba(3, 23, 22, 0.8);
+          backdrop-filter: blur(10px);
+          text-align: center;
+          padding: 20px;
+          border-bottom: 3px solid #3a348a;
+          margin-bottom: 20px;
+          position: relative;
+          z-index: 999;
+        }
+
+        header h1 {
+          color: #aea9e1;
+          margin-bottom: 20px;
+        }
+
+        /* Intro and Text */
+        .intro-text, p {
+          font-size: 18px;
+          margin: 20px 0;
+          background: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+          border-radius: 25px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+          text-align: left;
+          display: inline-block;
+          margin-top: 15px;
+          background: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+          border-radius: 25px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+          margin: 10px 0;
+        }
+
+        /* Divider */
+        .divider {
+          width: 60%;
+          margin: 30px auto;
+          border: none;
+          height: 2px;
+          background: linear-gradient(to right, transparent, #d6d4f8, transparent);
+        }
+
+        /* Hero Image */
+        .hero-img img {
+          width: 100%;
+          max-width: 800px;
+          margin: 20px auto;
+          display: block;
+        }
+
+        /* Image Gallery on Home */
+        .image-gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          margin: 30px 0;
+        }
+
+        /* Gallery Page Grid */
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 30px;
+          margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern Gallery</h1>
+        <p>Welcome to our stunning collection of images.</p>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <div class="intro-text">
+                <p>This is a modern, responsive website with animated gradients and 3D effects. Explore the gallery below.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="hero-img">
+                <img src="https://via.placeholder.com/800x400?text=Hero+Image" alt="Hero Image">
+            </div>
+
+            <h3>Featured Images</h3>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1">
+                <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2">
+                <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3">
+                <img src="https://via.placeholder.com/300x200?text=Image+4" alt="Image 4">
+            </div>
+
+            <ul>
+                <li>Feature 1: Animated background gradient.</li>
+                <li>Feature 2: Hover effects on images and headers.</li>
+                <li>Feature 3: Fixed bottom navigation.</li>
+                <li>Feature 4: Responsive grid layouts.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+Image+1" alt="Gallery Image 1">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+Image+2" alt="Gallery Image 2">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+Image+3" alt="Gallery Image 3">
+                <img src="https://via.placeholder.com/400x300?text=Gallery+Image+4" alt="Gallery Image 4">
+            </div>
+        </section>
+    </main>
+
+    <nav>
+        <a href="#biography">Biography</a>
+        <a href="#about-couse">About Course</a>
+        <a href="#my-learning">My Learning</a>
+        <a href="#reflection">Reflection</a>
+    </nav>
+</body>
+</html>
